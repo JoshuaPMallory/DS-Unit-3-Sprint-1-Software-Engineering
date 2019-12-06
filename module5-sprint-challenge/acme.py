@@ -51,7 +51,12 @@ class BoxingGlove(Product):
         return '...it\'s a glove.'
     
     def punch(self):
-        if self.weight < 5: return 'That tickles.'
-        elif self.weight >= 5 and self.weight < 10: return 'Hey that hurt!'
-        else: return 'OUCH!'
+        if self.weight < 5:
+            return 'That tickles.'
+        
+        elif self.weight >= 5 and self.weight < 10:
+            return 'Hey that hurt!'
+        
+        else:
+            return 'OUCH!'
 
